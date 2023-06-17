@@ -2,15 +2,6 @@
 
 set -euo pipefail
 
-#Disclaimer
-
-printf "\033[0;31mDisclaimer: This installer is unofficial and Ultra.cc staff will not support any issues with it.\033[0m\n"
-read -rp "Type confirm if you wish to continue: " input
-if [ ! "$input" = "confirm" ]; then
-    exit
-fi
-
-clear
 
 cd "${HOME}" || exit 1
 
@@ -240,6 +231,7 @@ fresh_install() {
             echo "Webhook URLs"
             echo "Sonarr: http://172.17.0.1:${port}/triggers/sonarr"
             echo "Radarr: http://172.17.0.1:${port}/triggers/radarr"
+            echo "Lidarr: http://172.17.0.1:${port}/triggers/lidarr"
             echo
             exit 0
         else
