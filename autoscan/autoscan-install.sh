@@ -161,6 +161,10 @@ triggers:
   radarr:
     - name: radarr
       priority: 1
+  
+  lidarr:
+    - name: lidarr
+      priority: 1
 
 targets:
   ${target}:
